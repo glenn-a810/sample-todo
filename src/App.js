@@ -1,16 +1,12 @@
 import './App.css'
+import ExpenseItem from './components/ExpenseItem'
 
 function App() {
-  // vanila js
-  const para = document.createElement('p')
-  para.textContent = 'This is invisible'
-  document.getElementById('root').append(para)
-
-  // react.js
   return (
     <div className="App">
       <h2>npm run start</h2>
       <p>This is also visible</p>
+      <ExpenseItem />
     </div>
   )
 }
