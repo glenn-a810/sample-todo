@@ -10,7 +10,7 @@ function ExpenseItem(props) {
     <div className="expense-item">
       {/*<div>March 28th 2022</div>*/}
       {/*<div>{props.date.toDateString()}</div>*/}
-      <ExpenseDate />
+      <ExpenseDate date={props.date} />
 
       <div className="expense-item__description">
         {/*<h2>Car Insurance</h2>*/}
