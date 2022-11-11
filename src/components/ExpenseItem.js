@@ -1,5 +1,6 @@
 import './ExpenseItem.css'
 import ExpenseDate from './ExpenseDate'
+import Card from './Card'
 
 function ExpenseItem(props) {
   // const expenseDate = new Date(2022, 10, 7)
@@ -7,7 +8,7 @@ function ExpenseItem(props) {
   // const expenseAmount = 294.67
 
   return (
-    <div className="expense-item">
+    <Card className="expense-item">
       {/*<div>March 28th 2022</div>*/}
       {/*<div>{props.date.toDateString()}</div>*/}
       <ExpenseDate date={props.date} />
@@ -18,7 +19,7 @@ function ExpenseItem(props) {
         {/*<div className="expense-item__price">$294.67</div>*/}
         <div className="expense-item__price">${props.amount}</div>
       </div>
-    </div>
+    </Card>
   )
 }
 
