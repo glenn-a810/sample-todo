@@ -1,6 +1,7 @@
 // import './App.css'
 // import ExpenseItem from './components/ExpenseItem'
 import Expenses from './components/Expenses'
+import React from 'react'
 
 function App() {
   const expenses = [
@@ -25,12 +26,19 @@ function App() {
     },
   ]
 
-  return (
-    <div className="App">
-      <h2>npm run start</h2>
-      <Expenses items={expenses} />
-    </div>
+  return React.createElement(
+    'div',
+    {},
+    React.createElement('h2', {}, 'npm run start'),
+    React.createElement(Expenses, { items: expenses })
   )
+
+  // return (
+  //   <div className="App">
+  //     <h2>npm run start</h2>
+  //     <Expenses items={expenses} />
+  //   </div>
+  // )
 }
 
 export default App
