@@ -26,19 +26,19 @@ const App = () => {
     },
   ]
 
-  return React.createElement(
-    'div',
-    {},
-    React.createElement('h2', {}, 'npm run start'),
-    React.createElement(Expenses, { items: expenses })
-  )
-
-  // return (
-  //   <div className="App">
-  //     <h2>npm run start</h2>
-  //     <Expenses items={expenses} />
-  //   </div>
+  // return React.createElement(
+  //   'div',
+  //   {},
+  //   React.createElement('h2', {}, 'npm run start'),
+  //   React.createElement(Expenses, { items: expenses })
   // )
+
+  return (
+    <div className="App">
+      <h2>npm run start</h2>
+      <Expenses items={expenses} />
+    </div>
+  )
 }
 
 export default App
